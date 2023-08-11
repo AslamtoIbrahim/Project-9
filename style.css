@@ -17,14 +17,75 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: hsl(244, 38%, 16%);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     max-width: 80vw;
     overflow: hidden;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    filter:hue-rotate(270deg);
+.sec2 {
+    background-image: linear-gradient(hsla(277, 91%, 27%, 0.55), hsla(277, 91%, 27%, 0.55)), url(images/image-header-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 100%; */
+}
 
+.sec1 {
+    margin: 2.5rem;
+
+}
+
+.sec1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+.sec1 p {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+}
+
+
+.views {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+h1,
+h2 {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+
+}
+
+@media screen and (max-width:913px) {
+    body {
+        width: 100%;
+    }
+
+    .sec1{
+        order: 2;
+    }
+
+    .sec2{
+        order: 1;
+        height: 15rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .views{
+        margin-top: 2.5rem;
+        flex-direction: column;
+        width: 100%;
+    }
 }
