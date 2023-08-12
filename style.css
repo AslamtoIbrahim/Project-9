@@ -23,11 +23,20 @@ body {
 }
 
 .sec2 {
-    background-image: linear-gradient(hsla(277, 91%, 27%, 0.55), hsla(277, 91%, 27%, 0.55)), url(images/image-header-desktop.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* height: 100%; */
+    position: relative;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+.overlay{
+    background: hsl(277, 64%, 61%);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
 }
 
 .sec1 {
@@ -66,8 +75,7 @@ h2 {
 @media screen and (max-width:913px) {
     body {
         width: 100%;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem;
     }
 
     .sec1{
